@@ -27,8 +27,7 @@ def player(team): # out the Raptor team into a file as required
 		for players in Raptors:
 			players=",".join(players)
 			file.write ("\n" "\n"+ str(players ))
-if __name__ == '__main__':
-	player(input("Enter team name here: "))				
+			
 				 
 def player1(team): # output the Dragons team into a file as required
 	with open("teams.txt","a") as file:
@@ -36,8 +35,7 @@ def player1(team): # output the Dragons team into a file as required
 		for player2 in Dragons:
 			player2=",".join(player2)
 			file.write ("\n" "\n"+ str(player2))
-if __name__ == '__main__':
-	player1(input("Enter team name here: "))	                			
+	                			
 
 def player3(team):# output the Sharks team into a file as required
 	with open("teams.txt","a") as file:
@@ -47,9 +45,9 @@ def player3(team):# output the Sharks team into a file as required
 			file.write ("\n" "\n"+ str(player4))
 			
 if __name__ == '__main__':
-	player3(input("Enter team name here: "))			
-	
-
+	player(input("Enter team name here: "))			
+	player1(input("Enter team name here: "))
+	player3(input("Enter team name here: "))
 
 		
 			
